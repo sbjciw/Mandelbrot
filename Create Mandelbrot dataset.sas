@@ -42,17 +42,17 @@ CX336600 CX669933 CX99CC66 CXCCFF99 CX663300 CX996633 CXCC9966 CXFFCC99
 CX660033 CX993366 CXCC6699 CXFF99CC CX003366 CX663399 CX9966CC CXCC99FF
 CX003366 CX663399 CX9966CC CXCC99FF CX003366 CX663399 CX9966CC CXCC99FF
 CX003366 CX663399 CX9966CC CXCC99FF CX003366 CX663399 CX9966CC CXCC99FF
-black
+black black black black black black black black
 )
 ;
 
 /* Drawing Mandelbrot Sets */
-proc gcontour data=mandelbrot2;
+proc gcontour data=mandelbrot;
    Title 'Mandelbrot Set';
    plot q*p=mesh /
    nolegend
    pattern
    join
-   levels = 5 to 45
+   levels = 3 to 50
   ;
 run;
