@@ -1,4 +1,4 @@
-/* create Mandelbrot dataset */
+/* create the dataset and Compute the coordinates for Mandelbrot*/
 data indata;
 	n = 600;  m = 600;
 	pmin = -2.5; pmax = 1.5;
@@ -17,7 +17,6 @@ run;
 quit;
 
 
-/* Compute the coordinates */
 data mandelbrot;
 	set indata;
     keep p q mesh;
